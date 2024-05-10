@@ -1,0 +1,9 @@
+{
+    "Lua.diagnostics.globals": [
+        "SlashCmdList",
+        "ITEM_SOULBOUND",
+        "ProfessionsFrameTitleText",
+        "ProfessionsFrame",
+        "ATTRIBUTE_NOOP"
+    ]
+}

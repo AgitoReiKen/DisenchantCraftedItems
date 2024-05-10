@@ -1,0 +1,19 @@
+## Interface: 100105
+## DefaultState: Enabled
+## Version: 2.3.2
+## Title: DisenchantCraftedItems
+## Notes: Button to disenchant crafted items.
+## Notes-deDE: Knopf zu entzaubernden gefertigten Gegenständen.
+## Notes-esES: Botón para desencantar artículos fabricado.
+## Notes-esMX: Botón para desencantar artículos fabricado.
+## Notes-frFR: Bouton pour désenchanter les articles fabriqués.
+## Notes-itIT: Pulsante per disincantamento oggetti creati.
+## Notes-koKR: 마력 추출 아이템
+## Notes-ptBR: Botão para desencantar itens fabricado.
+## Notes-ruRU: Кнопка для pаспыление обработанных предметов.
+## Notes-zhCN: 按钮打破制作的物品
+## Notes-zhTW: 按钮打破制作的物品
+## Author: Sunsequent
+## SavedVariables: DCI_AutoLootDisenchanted, DCI_IgnoreSoulbound
+## IconTexture: Interface\AddOns\DisenchantCraftedItems\Icon.tga
+DisenchantCraftedItems.lua
