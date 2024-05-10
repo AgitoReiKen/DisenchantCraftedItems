@@ -4,6 +4,17 @@
         "ITEM_SOULBOUND",
         "ProfessionsFrameTitleText",
         "ProfessionsFrame",
-        "ATTRIBUTE_NOOP"
+        "ATTRIBUTE_NOOP",
+        "CreateFrame",
+        "NUM_BAG_SLOTS",
+        "time",
+        "GetLocale",
+        "GetSpellInfo",
+        "IsSpellKnown",
+        "C_Container",
+        "C_TradeSkillUI",
+        "strfind",
+        "GetItemInfo",
+        "InCombatLockdown"
     ]
 }

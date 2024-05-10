@@ -482,14 +482,20 @@ f:RegisterEvent("ADDON_LOADED");
 f:RegisterEvent("PLAYER_REGEN_DISABLED");
 f:RegisterEvent("PLAYER_REGEN_ENABLED");
 
-local lastUpdate = time()
-frameItemCount:SetScript("OnEvent", function(self, event, ...)
-	local shouldUpdate = difftime(time(), lastUpdate) > 0.25
+local frameTime = 0.0
 
-	-- print("|cFFAE00AEShould update?|r " .. tostring(shouldUpdate));
+frameStateTracker:SetScript("OnUpdate", function(self, elapsed)
+	frameTime = frameTime + elapsed
+end
+)
+frameItemCount:SetScript("OnEvent", function(self, event, ...)
+	local shouldUpdate = frameTime - (self.lastUpdate or 0) > 0.1;
+
+	-- print("|cFFAE00AEShould update?|r " ..
+	-- 	tostring(shouldUpdate) .. " | " .. tostring(frameTime) .. " | " .. tostring(self.lastUpdate or 0));
 	if shouldUpdate and not InCombatLockdown() and ProfessionsFrame then
 		if ProfessionsFrame:IsShown() then
-			lastUpdate = time()
+			self.lastUpdate = frameTime
 			UpdateDCIFrames(event, ...);
 		else
 			HideDCIFrames();
